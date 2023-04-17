@@ -19,3 +19,6 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+vim.wo.relativenumber = true
+vim.opt_global.shortmess:remove("F") -- See `:h nvim-metals`
